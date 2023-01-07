@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const sumar = (num1,num2)=>{
+            return new Promise(()=>{
+                setTimeout(()=>{
+                    let suma = num1+num2;
+                    if(suma>100){
+                        res(suma);
+                    }else{
+                        rej("error al procesar los datos");
+                    }
+                },2000);
+            });
+        };
+        const llamarFuncion= async()=>{
+          try {
+            const res= await sumar(12,8);
+            console.log(res);
+          } catch (error) {
+            console.log(error);
+          }
+        }
+    </script>
+</body>
+</html>

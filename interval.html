@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<body>
+    <img id="slider" width="1120" height="630" />
+    <script type="text/javascript">
+        // const intervalo=function(){
+        //     console.log("Jared");
+        // }
+        // setInterval(intervalo,2000);
+        window.addEventListener('load', function() {
+            console.log("documento cargado");
+
+            const slider = document.getElementById("slider");
+
+            const imgs =["zelda.jpg","smash.png"];
+            let indexImg=0;
+            
+            const cambiarImg=function(){
+                // slider.src="img/a.gif";
+                slider.src=`img/${imgs[indexImg]}`;
+                if(indexImg<imgs.length-1){
+                    indexImg++;
+                }else{
+                    indexImg=0;
+                }
+            };
+
+            cambiarImg();
+
+            setInterval(cambiarImg,2000)
+
+        });
+
+    </script>
+</body>
+</html>

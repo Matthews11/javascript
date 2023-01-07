@@ -1,0 +1,13 @@
+funciones importantes:
+
+alert("imprime");
+confirm("respuesta de si o no");
+prompt("cuadro de dialogo en alerta");
+with(document){
+write("segun variable o funcion acorta");
+}
+"verifica que tipo de dato es " typeof string 
+function map("se opera con la posicion de arreglo")
+reduce("cada posicion apunta a la siguiente y se va reduciendo")
+
+consumir api
